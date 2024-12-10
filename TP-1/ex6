@@ -1,0 +1,6 @@
+n=int(input("donnez la valeur de n :\n"))
+def fonction_carre(n):
+    return  n*2
+
+resultat = fonction_carre(n)
+print(f"Le carré de ",n, "est", resultat)
