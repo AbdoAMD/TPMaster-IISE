@@ -6,11 +6,12 @@ class Personne:
         self.age = age
 
     def se_presenter(self):
-        print(f"Je suis {self.prenom} {self.nom}, j'ai {self.age} ans.")
+        print( "Je suis {self.prenom} {self.nom}, j'ai {self.age} ans.")
 
 # Sous-classe Etudiant
     def Etudiant(Personne):  
-        self.Personne = Personne 
+        self.Personne = Personne()
+
     
     
     
