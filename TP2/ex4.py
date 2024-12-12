@@ -1,4 +1,3 @@
-# Classe Personne
 class Personne:
     def __init__(self, nom, prenom, age):
         self.nom = nom
@@ -6,35 +5,20 @@ class Personne:
         self.age = age
 
     def se_presenter(self):
-        print( "Je suis {self.prenom} {self.nom}, j'ai {self.age} ans.")
+        print(f"Je suis {self.prenom} {self.nom}, j'ai {self.age} ans.")
 
-# Sous-classe Etudiant
-    def Etudiant(Personne):  
-        self.Personne = Personne()
+class Etudiant(Personne):  
+    def __init__(self, nom, prenom, age, matricule):
+        super().__init__(nom, prenom, age)  
+        self.matricule = matricule
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     def etudier(self):
-        print(f"{self.prenom} étudie. Matricule : {self.matricule}")
+        print(f"je suis {self.prenom} {self.nom}, mon Matricule est : {self.matricule}")
 
-# Test des classes
-personne = Personne("abdelghani", "amejoud", 25)
+personne = Personne("Abdelghani", "Amejoud", 25)
 personne.se_presenter()
 
-etudiant = Etudiant("brahim", "farhan", 21, "A123")
+etudiant = Etudiant("Brahim", "Modan", 21, "D137849398")
 etudiant.se_presenter()
 etudiant.etudier()
+

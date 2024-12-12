@@ -5,7 +5,7 @@ class Voiture:
         self.annee = annee
 
     def afficher_info(self):
-        print(f"Voiture: {self.marque} {self.modele}, Année: {self.annee}")
+        print("Voiture: ",self.marque, self.modele,"Année: ", self.annee)
 
 voiture1 = Voiture("Toyota", "Corolla", 2020)
 voiture2 = Voiture("Honda", "Civic", 2018)
