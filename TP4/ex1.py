@@ -23,8 +23,8 @@ class Voiture(Vehicule, Moteur):
         self.nombre_de_places = nombre_de_places
 
     def afficher_info(self):
-        super().afficher_info()
-        super().afficher_moteur()
+        self().afficher_info()
+        self().afficher_moteur()
         print(f"Nombre de places: {self.nombre_de_places}")
 
 
@@ -35,8 +35,8 @@ class Moto(Vehicule, Moteur):
         self.type_moto = type_moto
 
     def afficher_info(self):
-        super().afficher_info()
-        super().afficher_moteur()
+        self().afficher_info()
+        self().afficher_moteur()
         print(f"Type de moto: {self.type_moto}")
 
 
