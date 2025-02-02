@@ -6,9 +6,10 @@ def safe_division(a, b):
 try:
     result = safe_division(10, 2)  
     print("Résultat de la division :", result)
-except ZeroDivisionError as e:
+except ZeroDivisionError as e :
     print(e)
 else:
+
     print("La division a été effectuée avec succès.")
 
 finally:

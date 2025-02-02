@@ -1,2 +1,1 @@
-except ZeroDivisionError as e:
-    print(e)
+return file.read()
