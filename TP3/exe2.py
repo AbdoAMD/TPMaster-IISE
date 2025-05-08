@@ -1,29 +1,29 @@
 class Personne:
     def __init__(self, nom, prenom, age):
-        self.__nom = nom
-        self.__prenom = prenom
-        self.__age = age
+        self.nom = nom
+        self.prenom = prenom
+        self.age = age
 
     # Getters
     def get_nom(self):
-        return self.__nom
+        return self.nom
 
     def get_prenom(self):
-        return self.__prenom
+        return self.prenom
 
     def get_age(self):
-        return self.__age
+        return self.age
 
     # Setters
     def set_nom(self, nom):
-        self.__nom = nom
+        self.nom = nom
 
     def set_prenom(self, prenom):
-        self.__prenom = prenom
+        self.prenom = prenom
 
     def set_age(self, age):
         if age > 0:
-            self.__age = age
+            self.age = age
         else:
             print("L'âge doit être un nombre positif.")
 

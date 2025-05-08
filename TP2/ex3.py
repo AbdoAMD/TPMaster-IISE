@@ -16,7 +16,7 @@ class CompteBancaire:
         print("Solde de" , self.titulaire , " est :", self.solde, "DH")
 
 
-compte = CompteBancaire("Abdelghani Amejoud", 1000)
+compte = CompteBancaire("Abdelghani Amejoud", 0)
 compte.deposer(8000)
 compte.retirer(3500)
 compte.afficher_solde()

@@ -4,7 +4,7 @@ def safe_division(a, b):
         raise ZeroDivisionError("Erreur : Impossible de diviser par zéro.")
     return a / b
 try:
-    result = safe_division(10, 0)
+    result = safe_division(10, 2)
     print("Résultat de la division :", result)
 except ZeroDivisionError as e:
     print(e)

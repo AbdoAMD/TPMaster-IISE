@@ -21,8 +21,8 @@ class Bibliotheque:
 # Test
 bibliotheque = Bibliotheque()
 bibliotheque.ajouter_livre("La Trilogie du Caire", "Naguib Mahfouz", 1988)
-bibliotheque.ajouter_livre("Les Hommes dans le Soleil", "Ghassan Kanafani", 1992)
-bibliotheque.ajouter_livre("Retour à Haïfa", "Ghassan Kanafani", 1948)
+#bibliotheque.ajouter_livre("Les Hommes dans le Soleil", "Ghassan Kanafani", 1992)
+#bibliotheque.ajouter_livre("Retour à Haïfa", "Ghassan Kanafani", 1948)
 
 bibliotheque.afficher_livres()
 

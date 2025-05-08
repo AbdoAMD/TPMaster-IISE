@@ -1,20 +1,13 @@
 def ajouter_phrases():
-    
-    reponse = input("Souhaitez-vous ajouter des phrases à 'phrases.txt' ? (oui/non) : ").lower()
-    
-    if reponse == "oui":
-        while True:
-            phrase = input("Entrez une phrase à ajouter : ")
-            
-            with open('phrases.txt', 'a') as file:
-                file.write(phrase + "\n")
-            
-            continuer = input("Voulez-vous ajouter une autre phrase ? (oui/non) : ").lower()
-            if continuer != "oui":
-                break  
+    phrase = input("Entrez une phrase: ")
+    with open("phrases.txt", "a") as file:  # Utilisation du mode 'a' pour ajouter sans écraser
         
-        print("Les phrases ont été ajoutées à 'phrases.txt'.")
-    else:
-        print("Aucune phrase n'a été ajoutée.")
+        file.write(phrase + "\n")
 
-ajouter_phrases()
+while True:
+    response = input("Souhaitez-vous ajouter des phrases à 'phrases.txt' ? (oui/non) : ").strip().lower()
+    if response == "oui":
+        ajouter_phrases()
+    elif response == "non":
+        print("Fin du programme.")
+        break

@@ -1,8 +1,11 @@
-import csv
+
 
 # Étape 1 : Créer le fichier CSV avec des contacts
 
     # Données à écrire dans le fichier CSV
+import csv
+
+
 contacts = [
         {"Nom": "Ali", "Âge": 30, "Ville": "Agadir"},
         {"Nom": "Ahmed", "Âge": 25, "Ville": "Casa"},
@@ -10,7 +13,7 @@ contacts = [
     ]
 
     # Création du fichier CSV avec les colonnes et données
-with open('contacts.csv', mode='w', newline='', encoding='utf-8') as csvfile:
+with open('contacts.csv', mode='w', newline= '', encoding='utf-8') as csvfile:
     fieldnames = ['Nom', 'Âge', 'Ville']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 

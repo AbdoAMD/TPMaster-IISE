@@ -1,6 +1,6 @@
-texte=input("entrez une phrase: \n ")
+text=input("entrez une phrase: \n ")
 def analyse_texte(texte):
-    mots = texte.strip().split()
+    mots = texte.split()
     
     nb_mots = len(mots)
     
@@ -8,7 +8,5 @@ def analyse_texte(texte):
     
     return {"nombre_mots": nb_mots,"nombre_caracteres": nb_caracteres}
 
-
-
-resultat = analyse_texte(texte)
+resultat = analyse_texte(text)
 print(resultat)

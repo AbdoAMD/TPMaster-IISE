@@ -1,21 +1,19 @@
-from abc import ABC, abstractmethod
-
-class Vehicule(ABC):
+from abc import ABC,abstractmethod  
+class Animal(ABC):
     @abstractmethod
-    def deplacer(self):
+    def animal_parle(self):
         pass
-
-class Voiture(Vehicule):
-    def deplacer(self):
-        return "La voiture roule sur la route."
-
-class Bicyclette(Vehicule):
-    def deplacer(self):
-        return "La bicyclette roule sur un chemin."
+class Chien(Animal) :
+    def animal_parle(self):
+        print("le chien Dir Wouffff")
 
 
-voiture = Voiture()
-bicyclette = Bicyclette()
+class Chat(Animal):
+    def animal_parle(self):
+        print("la chat Dir Moiwwwwww")
 
-print(voiture.deplacer())  
-print(bicyclette.deplacer())  
+
+chien=Chien()
+chien.animal_parle()                 
+chat=Chat()
+chat.animal_parle() 
